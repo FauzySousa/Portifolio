@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--GOOGLE FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--FIM GOOGLE FONTES-->
+    <!--BOOTSTRAP ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <!--FIM BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/menu.js" defer></script>
+    <script src="js/api-enviar-email.js" defer></script>
+
+    <title>fauzydev</title>
+  </head>
+  <body>
+    <header>
+      <div class="interface">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.png" alt="Minha logo" />
+          </a>
+        </div>
+        <!--logo-->
+
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+        </nav>
+
+        <div class="btn-contato">
+          <a href="#contato">
+            <button>Contato</button>
+          </a>
+        </div>
+        <!--btn-contato-->
+
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list"></i>
+        </div>
+        <!--btn-abrir-menu-->
+
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <!--btn-fechar-->
+
+          <nav>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#especialidades">Especialidades</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--menu-mobile-->
+
+        <div class="overlay-menu" id="overlay-menu"></div>
+        <!--overlay-menu-->
+      </div>
+      <!--interface-->
+    </header>
+
+    <main>
+      <section class="topo-do-site" id="inicio">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>
+                Transformo ideias em APIs seguras, escaláveis e prontas para
+                produção<span>.</span>
+              </h1>
+              <p>
+                Desenvolvo soluções back-end focadas em resolver problemas reais
+                de negócio, com código limpo, arquitetura organizada e alta
+                performance. Utilizo o ecossistema Spring para criar APIs
+                confiáveis e preparadas para evoluir com eficiência.
+              </p>
+
+              <div class="btn-contato">
+                <a href="#contato"> <button>Entre em contato</button> </a
+                ><!--btn-contato-->
+              </div>
+            </div>
+            <!--txt-topo-site-->
+
+            <div class="img-topo-site">
+              <img src="images/springboot.png" class="img-spring-boot" />
+            </div>
+            <!--img-topo-site-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--topo do site-->
+
+      <section class="especialidades" id="especialidades">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+          <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-code-square"></i>
+              <h3>APIs REST com Spring Boot</h3>
+              <p>
+                Criação de APIs bem estruturadas utilizando Spring Boot,
+                seguindo padrões de mercado para garantir organização, clareza
+                no código e facilidade de manutenção.
+              </p>
+            </div>
+            <!--especialidades-box-->
+
+            <div class="especialidades-box">
+              <i class="bi-shield-lock"></i>
+              <h3>Segurança com Spring Security & JWT</h3>
+              <p>
+                Implementação de autenticação e autorização com Spring Security
+                e JWT, garantindo proteção de dados e controle de acesso seguro.
+              </p>
+            </div>
+            <!--especialidades-box-->
+
+            <div class="especialidades-box">
+              <i class="bi-database"></i>
+              <h3>Banco de Dados & Performance</h3>
+              <p>
+                Modelagem de bancos MySQL priorizando a organização e a
+                velocidade. Estruturas pensadas para garantir a integridade das
+                informações e facilitar a manutenção do sistema.
+              </p>
+            </div>
+            <!--especialidades-box-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--especialidades-->
+
+      <section class="sobre" id="sobre">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-sobre">
+              <h2>MUITO PRAZER, <span>SOU FAUZY SOUSA.</span></h2>
+              <p>
+                Muito prazer, sou Fauzy Sousa. Sou desenvolvedor back-end com
+                foco no ecossistema Java, atuando principalmente com Spring Boot
+                na construção de APIs REST seguras, organizadas e performáticas.
+                Tenho experiência prática com Spring Security e autenticação via
+                JWT, além de trabalhar com persistência de dados utilizando
+                MySQL e ambientes padronizados com Docker.
+              </p>
+              <p>
+                Mais do que apenas fazer o código funcionar, me preocupo com a
+                qualidade da solução como um todo. Busco aplicar boas práticas,
+                manter uma arquitetura limpa e escrever código que seja fácil de
+                entender, manter e evoluir. Atualmente, estou em busca da minha
+                primeira oportunidade como desenvolvedor back-end, pronto para
+                contribuir com soluções eficientes e crescer com desafios reais
+                do mercado.
+              </p>
+              <div class="btn-social">
+                <a href="https://www.freelancer.com/u/FauzyDev"
+                  ><button><i class="bi bi-briefcase-fill"></i></button
+                ></a>
+                <a href="https://www.linkedin.com/in/fauzy-sousa-974a98409"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a href="https://github.com/FauzySousa"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+              </div>
+              <!--btn-social-->
+            </div>
+            <!--txt-sobre-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--sobre-->
+
+      <section class="portifolio" id="projetos">
+        <div class="interface">
+          <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
+          <div class="flex">
+            <a href="templates/projetos/mailapi.html">
+              <div
+                class="img-port"
+                style="background-image: url(images/logo-mailservice.png)"
+              >
+                <div class="overlay">MailService</div>
+              </div>
+            </a>
+            <!--img projeto 1-->
+            <a href="templates/projetos/controlcash.html">
+            <div
+              class="img-port"
+              style="background-image: url(images/logo-controlcash.png)"
+            >
+              <div class="overlay">ControlCash</div>
+            </div>
+            </a>
+            <!--img projeto 2-->
+            <div
+              class="img-port"
+              style="background-image: url(images/fotopreta.png)"
+            >
+              <div class="overlay">Em breve...</div>
+            </div>
+            <!--img projeto 3-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--portifolio-->
+
+      <section class="formulario" id="contato">
+        <div class="interface">
+          <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+          <form action="" id="form-contato">
+            <input
+              type="text"
+              name=""
+              id="nome"
+              required
+              placeholder="Seu nome completo:"
+            />
+            <input
+              type="email"
+              name=""
+              id="email"
+              required
+              placeholder="Seu e-mail:"
+            />
+            <input
+              type="tel"
+              name=""
+              id="telefone"
+              onkeyup="maskTel(this)"
+              maxlength="15"
+              required
+              placeholder="Seu celular:"
+            />
+            <textarea
+              name=""
+              id="mensagem"
+              required
+              placeholder="Sua mensagem"
+            ></textarea>
+            <div class="btn-enviar">
+              <input type="submit" value="ENVIAR" id="btn-enviar" />
+            </div>
+          </form>
+        </div>
+        <!--interface-->
+      </section>
+      <!--formulario-->
+    </main>
+
+    <footer>
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <img src="images/logo.png" alt="" />
+            </div>
+            <!--logo-footer-->
+            <div class="btn-social">          
+              <a href="https://www.freelancer.com/u/FauzyDev"
+                ><button><i class="bi bi-briefcase-fill"></i></button
+              ></a>
+              <a href="https://www.linkedin.com/in/fauzy-sousa-974a98409"
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+              <a href="https://github.com/FauzySousa"
+                ><button><i class="bi bi-github"></i></button
+              ></a>
+            </div>
+            <!--btn-social-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--line-footer-->
+
+        <div class="line-footer borda">
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:contatofauzy@gmail.com">contatofauzy@gmail.com</a>
+          </p>
+        </div>
+        <!--line-footer-->
+      </div>
+      <!--interface-->
+    </footer>
+
+    <div id="toast"></div>
+  </body>
+</html>
